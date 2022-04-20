@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="title"><span>PB</span></div>
+  <div
+    class="header-item"
+    *ngFor="let headerItem of headerItems"
+    [routerLink]="headerItem.link"
+  >
+    <a [routerLink]="headerItem.link" routerLinkActive="active">
+      <fa-icon [icon]="headerItem.icon"></fa-icon>
+      {{ headerItem.text }}
+    </a>
+    <div class="underline"></div>
+  </div>
+</div>

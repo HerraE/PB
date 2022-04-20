@@ -1,0 +1,13 @@
+<h1>Skills</h1>
+<br />
+<div *ngFor="let group of skillGroups">
+  <h2>{{ group.title }}</h2>
+  <app-card
+    *ngFor="let skill of group.skills"
+    [title]="skill.title"
+    [avatar]="skill.avatar"
+    [icon]="skill.icon"
+    [progress]="skill.progress"
+  >
+  </app-card>
+</div>

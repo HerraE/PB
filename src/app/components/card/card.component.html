@@ -1,0 +1,17 @@
+<div class="card">
+  <div
+    class="card-avatar"
+    *ngIf="avatar || icon"
+    [ngStyle]="{ 'background-image': 'url(' + avatar + ')' }"
+  >
+    <fa-icon *ngIf="icon" [icon]="icon" [size]="'3x'"></fa-icon>
+  </div>
+  <div class="card-inner">
+    <div class="title">{{ title }}</div>
+    <div class="scale-container">
+      <div class="scale">
+        <div class="scale-inner" [ngStyle]="{ width: progress + '%' }"></div>
+      </div>
+    </div>
+  </div>
+</div>
