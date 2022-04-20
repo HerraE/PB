@@ -1,0 +1,11 @@
+<div class="container">
+  <div
+    class="event"
+    *ngFor="let event of events"
+    (click)="selectEvent(event)"
+    [ngClass]="{ active: event.active }"
+  >
+    <div class="date">{{ event.date }}</div>
+    <div class="title">{{ event.title }}</div>
+  </div>
+</div>

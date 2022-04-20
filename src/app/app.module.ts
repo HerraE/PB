@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 import { CvComponent } from './pages/cv/cv.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { SkillsComponent } from './pages/skills/skills.component';
@@ -38,6 +39,7 @@ const appRoute: Routes = [
     HeaderComponent,
     FooterComponent,
     CardComponent,
+    TimelineComponent,
   ],
   bootstrap: [AppComponent],
 })

@@ -12,7 +12,7 @@ import { HeaderComponent } from '../header/header.component';
 export class FooterComponent implements OnInit {
   public links: any[] = [
     { icon: faAngular, link: 'https://angular.io/' },
-    { icon: faGithub, link: 'https://github.com/' },
+    { icon: faGithub, link: 'https://github.com/HerraE' },
     { icon: faLinkedin, link: 'https://www.linkedin.com/' },
   ];
 

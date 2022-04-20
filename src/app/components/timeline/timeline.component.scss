@@ -1,0 +1,67 @@
+.container {
+  padding-top: 5em;
+
+  .event {
+    position: relative;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    color: #aaaaaa;
+    width: 1em;
+    height: 1em;
+    margin-top: 3em;
+    border-radius: 50%;
+
+    &:hover,
+    &.active {
+      cursor: pointer;
+      background-color: #333333;
+      border: 2px solid #ffffff;
+      color: #333333;
+
+      &::before {
+        background-color: #333333;
+      }
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background-color: #333333;
+      bottom: 0;
+    }
+
+    &::after {
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 5em;
+      width: 0.3em;
+    }
+
+    &::before {
+      top: 0.4em;
+      right: -1.5em;
+      height: 0.3em;
+      width: 2em;
+      background-color: #aaaaaa;
+    }
+
+    .date {
+      position: absolute;
+      left: -6em;
+    }
+
+    .title {
+      position: absolute;
+      width: 15em;
+      transform: rotate(-45deg);
+      top: -5.5em;
+      right: -15em;
+      overflow: visible;
+      white-space: nowrap;
+    }
+  }
+}
